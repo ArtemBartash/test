@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="./style/main.css">
+    <title>CV</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!--====================================Header start====================================-->
+        <header class="header">
+
+            <div class="header__top">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"><a data-goto=".main__summary" href="#" class="menu__link">About Me</a></li>
+                        <li class="header__item"><a data-goto=".main__skills" href="#" class="menu__link">Skills</a></li>
+                        <li class="header__item"><a data-goto=".main__code" href="#" class="menu__link">Code Example</a></li>
+                        <li class="header__item"><a data-goto=".main__education" href="#" class="menu__link">Education</a></li>
+                        <li class="header__item"><a data-goto=".main__education" href="#" class="menu__link">Projects</a></li>
+                        <li class="header__item"><a data-goto=".main__language" href="#" class="menu__link">Language</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="header__bottom">
+                <h1 class="header__title">Artem Bartashevich</h1>
+                <nav class="social__link">
+                    <ul class="social__list">
+                        <li class="social__item"><a href="https://github.com/ArtemBartash" target="_blank"><img src="./img/icons/github.png" alt="Github" /></a></li>
+                        <li class="social__item"><a href="https://www.instagram.com/babybarttt/?hl=ru" target="_blank"><img src="./img/icons/instagram.png" alt="Instagram" /></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+<!--====================================Header end===============================================-->
+
+<!--====================================Main start====================================-->
+        <main class="main">
+
+            <section class="main__header">
+                <figure class="main__image">
+                    <img src="./img/avatar.jpg" alt="beauty boy">
+                </figure>
+                <div class="main__name">
+                    <h2>Artem Bartashevich</h2>
+                    <h4>Student</h4>
+                </div>
+            </section>
+
+            <section class="main__summary">
+                <div class="summary">
+                    <h2>About Me</h2>
+                    <p class="main__text">Hi, I am 19 years old and I am a student of the BSU Faculty of Radiophysics. I have experience with C ++, and also finished Front-End developer courses at TeachMeSkills with success.
+                        After the courses, I worked on a small project <a href="https://afconsult.by/index.html" target="_blank" class="summary__link">Aspect Finance</a>. Now my main goal during the year is to get into EPAM Systems. I am young and ready to work for myself and for Sasha.
+                    </p>
+                    <h2 class="strengths__title">My strengths</h2>
+                    <ul class="strengths">
+                        <li class="strengths__item">&#9996;Teamwork</li>
+                        <li class="strengths__item">&#128162;Critical thinking</li>
+                        <li class="strengths__item">&#8987;Time management</li>
+                        <li class="strengths__item">&#127759;Communication</li>
+                    </ul>
+                </div>
+
+                <div class="contact">
+                    <ul class="contact__list">
+                        <li class="contact__item">Phone:</li>
+                        <li class="contact__item"><a href="tel:+375293830138">+375 29 38 301 38</a></li>
+                        <li class="contact__item">E-mail:</li>
+                        <li class="contact__item"><a href="mailto:tema.bartaschewi4@outlook.com">tema.bartaschewi4@outlook.com</a></li>
+                        <li class="contact__item">GitHub:</li>
+                        <li class="contact__item"><a href="https://github.com/ArtemBartash" target="_blank">@ArtemBartash</a></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="main__skills">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <img src="./img/icons/html.png" alt="HTML">
+                    <h3 class="skills__text">HTML</h3>
+                </div>
+                <div class="skills">
+                    <img src="./img/icons/css.png" alt="Css">
+                    <h3 class="skills__text">CSS (SASS/SCSS, BEM)</h3>
+                </div>
+                <div class="skills">
+                    <img src="./img/icons/javascript.png" alt="JavaScript">
+                    <h3 class="skills__text">JavaScript</h3>
+                </div>
+                <div class="skills">
+                    <img src="./img/icons/github.png" alt="GitHub">
+                    <h3 class="skills__text">GitHub</h3>
+                </div>
+            </section>
+
+            <section class="main__code">
+                <h2>Code Example</h2>
+                <pre><code class="javascript">
+            var isAnagram = function(test, original) {
+            if(test.toLowerCase().split('').sort().join('') === original.toLowerCase().split('').sort().join(''))
+                {
+                return true;
+                }
+            return false;
+            };
+                    </code></pre>
+            </section>
+
+            <section class="main__education">
+                <h2>Education</h2>
+                <ul class="education">
+                    <li class="education__list">&#128210; BSU (Faculty of Radiophysics and Computer Technologies)</li>
+                    <li class="education__list">&#128187; TeachMeSkills (Front-End Developer)</li>
+                </ul>
+            </section>
+
+            <section class="main__project">
+                <h2>Projects</h2>
+                <div class="project__container">
+                    <figure class="project">
+                        <a href="https://afconsult.by/index.html" target="_blank" class="project__link"><img src="./img/svg/afconsult.svg" alt="Afconsult" class="project__img"></a>
+                    </figure>
+                    <div class="text__container">
+                        <h3>Aspect Finance</h3>
+                        <p class="project__text">Business card site for a leasing company. The site also contains a news blog and a list of services. 
+                            The site was written using HTML, CSS, Javascript, the map was connected via Yandex Map Constructor. Collaboration with @kevinsanders133 and @megarex133.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__language">
+                <h2>Languages</h2>
+                <ul class="languages">
+                    <li class="languages__list">&#9989; English: A2</li>
+                    <li class="languages__list">&#9989; Russian: Native</li>
+                </ul>
+            </section>
+        </main>
+<!--====================================Main end====================================-->
+<!--====================================Footer start====================================-->
+        <footer class="footer">
+            <ul class="footer__item">
+                <li class="footer__list"><a href="https://rs.school/js/" target="_blank" class="footer__link"><img src="./img/svg/rss.svg" alt="Rs School" class="footer__svg"></a></li>
+                <li class="footer__list">2021</li>
+                <li class="footer__list"><a href="https://github.com/ArtemBartash/rsschool-cv" target="_blank" class="footer__link"><img src="./img/icons/githubV2.png" alt="Github" class="footer__pic"></a></li>
+            </ul>
+        </footer>
+<!--====================================Footer end====================================-->
+
+    </div>
+    <script src='./script/index.js'></script>
+</body>
+</html>

@@ -1,0 +1,1093 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color:#000000;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1024px;
+    background-color: #ffffff;
+    font-family: 'Glory', sans-serif;
+    /*box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);*/
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/*---------------------------------------Header start--------------------------------------*/
+
+.header__top {
+    background-color:#C0CEE2;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom:35px;
+}
+
+.header__item:hover {
+    box-shadow:
+        1px 1px #60708E,
+        2px 2px #60708E,
+        3px 3px #60708E,
+        4px 4px #60708E,
+        5px 5px #60708E,
+        6px 6px #60708E,
+        7px 7px #60708E;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px); 
+}
+
+.menu__icon {
+	display: none;
+}
+
+.header__list a {
+    font-size:20px;
+    font-weight: 600;
+}
+
+.header__title {
+    padding-left: 15px;
+    font-weight: 600;
+}
+
+.header__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social__list {
+    display: flex;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.social__item:hover {
+    animation: bounce 1s;
+}
+
+.social__item a img {
+    width: 30px;
+    height: auto;
+    margin-right: 15px;
+}
+/*---------------------------------------Header end--------------------------------------*/
+
+/*---------------------------------------Main start--------------------------------------*/
+
+.main {
+    padding-top: 35px;
+}
+
+.main__header {
+    display: flex;
+    align-items: center;
+    height: 415px;
+    background:
+    linear-gradient(to right, rgba(0,0,0, .6), rgba(0,0,0, .3)),
+    url(/img/Mountain.jpg)no-repeat center center;
+    background-size: cover;
+}
+
+.main__image {
+    margin-left: 75px;
+}
+
+.main__image img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50px 20px;
+    box-shadow: 0 0 15px rgb(6,20,46);
+}
+
+.main__name {
+    margin: 0 auto;
+    color: #fff;
+    font-weight: 600;
+}
+
+.main__name h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.main__name h4 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.main__summary {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+.summary h2 {
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.summary__link {
+    color:#B7BF12;
+}
+
+.main__text {
+    width: 500px;
+    font-size: 20px;
+}
+
+.strengths__title {
+    margin-top: 15px;;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.strengths {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+}
+
+.strengths__item {
+    margin-right: 15px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.contact {
+    font-size: 20px;
+}
+
+.contact__item {
+    margin-bottom: 15px;
+}
+
+.contact__list li:nth-child(2n+1) {
+    font-weight: 600;
+}
+
+
+.main__skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 35px;
+    background-color: #C0CEE2;
+    text-align: center;
+}
+
+.main__skills h2 {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.skills {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills img {
+    width: 50px;
+    height: auto;
+}
+
+.main__code {
+    margin-top: 35px;
+}
+
+.main__code h2 {
+    margin-bottom: 20px;
+    font-size: 34px;
+    margin-left: 80px;
+    font-weight: 600;
+}
+/*pre code {
+    background-color: #3f3f3f;
+}*/
+
+.main__education {
+    margin-top: 35px;
+    margin-left: 80px;
+}
+
+.main__education h2 {
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.education__list {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.main__project {
+    margin-top: 35px;
+    background-color: #C0CEE2;
+}
+.main__project h2 {
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: 600;
+    margin-left: 80px;
+    padding-top: 15px;
+}
+
+.project__container {
+    display: flex;
+    align-items: center;
+}
+
+.project__img {
+    width: 100px;
+    height: 100px;
+    margin-left: 80px;
+    margin-right: 20px;
+}
+
+.text__container h3 {
+    margin-bottom: 5px;
+}
+
+.project__text {
+    width: 80%;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.main__language {
+    margin-top: 35px;
+    margin-left: 80px;
+}
+
+.main__language h2 {
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.languages__list {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/*---------------------------------------Main end--------------------------------------*/
+
+/*---------------------------------------Footer start--------------------------------------*/
+
+.footer {
+    background-color: #242424;
+    height:54px;
+}
+
+.footer__list {
+    display: flex;
+    align-items: center;
+}
+
+.footer__item {
+    display:flex;
+    justify-content:space-around;
+    color: #fff;
+}
+
+.footer__pic {
+    height:50px;
+    width: 50px;
+}
+/*---------------------------------------Footer end--------------------------------------*/
+
+/*------------------------------------------highlight-------------------------------------*/
+
+:root {
+    --selection: rgba(224, 146, 58, 0.35);
+    --background: #242424;
+    --text: #ffffff;
+    --string: #67b26d;
+    --number: #e8a04e;
+    --title: #9e4ee8;
+    --built_in: #e25158;
+    --keyword: #e5b742;
+    --function: #e0923a;
+    --params: #508be5;
+    --comment: #7f7f7f;
+  }
+  
+  pre code {
+    display: block;
+    overflow-x: auto;
+    padding: 10px;
+    background: var(--background) !important;
+    -webkit-text-size-adjust: none;
+  }
+  
+  pre code *::selection,
+  .hljs::selection {
+    background: var(--selection) !important;
+  }
+  
+  .hljs {
+    color: var(--text);
+  }
+  
+  .hljs-string {
+    color: var(--string);
+  }
+  
+  .hljs-number {
+    color: var(--number) !important;
+  }
+  
+  .hljs-title {
+    color: var(--title) !important;
+  }
+  
+  .hljs-built_in {
+    color: var(--built_in) !important;
+  }
+  
+  .hljs-keyword {
+    color: var(--keyword) !important;
+  }
+  
+  .hljs-function > .hljs-keyword {
+    color: var(--function) !important;
+    font-style: italic;
+  }
+  
+  .hljs-params {
+    color: var(--params);
+  }
+  
+  .hljs-comment {
+    color: var(--comment);
+  }
+
+  /*------------------------------------------highlight end-------------------------------------*/
+
+  /*------------------------------------Media start-------------------*/
+
+  @media (max-width: 768px) {
+    .header__list a {
+        font-size:18px;
+    }
+
+    .header__title {
+       font-size: 28px;
+    }
+
+    .main__image img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .main__name h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .main__name h4 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .summary h2 {
+        font-size: 28px;
+    }
+
+    .strengths {
+        width: 350px;
+    }
+    
+    .strengths__item {
+        font-size: 18px;
+    }
+
+    .main__text {
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .contact {
+        font-size: 18px;
+    }
+
+    .contact__item {
+        margin-bottom: 12px;
+    }
+
+    .main__skills h2 {
+        font-size: 28px;
+    }
+    
+    .skills img {
+        width: 40px;
+        height: auto;
+    }
+
+    .skills__text {
+        font-size: 18px;
+    }
+
+    .main__code {
+        margin-top: 35px;
+    }
+    
+    .main__code h2 {
+        margin-bottom: 20px;
+        font-size: 28px;
+        margin-left: 40px;
+    }
+
+    .main__education {
+        margin-left: 40px;
+    }
+    
+    .main__education h2 {
+        font-size: 28px;
+    }
+    
+    .education__list {
+        font-size: 18px;
+    }
+
+    .main__project h2 {
+        font-size: 28px;
+        margin-left: 40px;
+    }
+    
+    .project__img {
+        width: 100px;
+        height: 100px;
+        margin-left: 40px;
+    }
+    
+    .project__text {
+        width: 80%;
+        font-size: 18px;
+    }
+    
+    .main__language {
+        margin-left: 40px;
+    }
+    
+    .main__language h2 {
+        font-size: 28px;
+    }
+    
+    .languages__list {
+        font-size: 18px;
+    }
+  }
+
+  
+@media (max-width: 767px) {
+    .header__top {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        position: fixed;
+        width: 100%;
+    }
+
+    .header__bottom {
+        padding-top: 70px;
+    }
+
+	.menu__icon {
+		z-index: 5;
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+	}
+	.menu__icon span,
+	.menu__icon::before,
+	.menu__icon::after {
+		left: 0;
+		position: absolute;
+		height: 10%;
+		width: 100%;
+		transition: all 0.3s ease 0s;
+		background-color: #000;
+	}
+	.menu__icon::before,
+	.menu__icon::after {
+		content: "";
+	}
+	.menu__icon::before {
+		top: 0;
+	}
+	.menu__icon::after {
+		bottom: 0;
+	}
+	.menu__icon span {
+		top: 50%;
+		transform: scale(1) translate(0px, -50%);
+	}
+
+	.menu__icon._active span {
+		transform: scale(0) translate(0px, -50%);
+	}
+	.menu__icon._active::before {
+		top: 50%;
+		transform: rotate(-45deg) translate(0px, -50%);
+	}
+	.menu__icon._active::after {
+		bottom: 50%;
+		transform: rotate(45deg) translate(0px, 50%);
+	}
+
+	.header__nav {
+		position: fixed;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(93,110,133, 0.9);
+		padding: 100px 30px 30px 30px;
+		transition: left 0.3s ease 0s;
+		overflow: auto;
+	}
+	.header__nav._active {
+		left: 0;
+	}
+
+	.header__nav::before {
+		content: "";
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		height: auto;
+		background-color: #C0CEE2;
+		z-index: 2;
+	}
+
+	.menu__list > li {
+		flex-wrap: wrap;
+		margin: 0px 0px 30px 0px;
+	}
+	.menu__list > li:last-child {
+		margin-bottom: 0;
+	}
+	.menu__list > li._active .menu__sub-list {
+		display: block;
+	}
+	.menu__link {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 660px) {
+
+    .header__title {
+       font-size: 24px;
+    }
+
+    .main__image img {
+        width: 190px;
+        height: 190px;
+    }
+    
+    .main__name h2 {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    
+    .main__name h4 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .summary h2 {
+        font-size: 24px;
+    }
+
+    .strengths {
+        width: 300px;
+    }
+    
+    .strengths__item {
+        font-size: 17px;
+    }
+
+    .main__text {
+        width: 300px;
+        font-size: 17px;
+    }
+
+    .contact {
+        font-size: 17px;
+    }
+
+    .contact__item {
+        margin-bottom: 12px;
+    }
+
+    .main__skills h2 {
+        font-size: 24px;
+    }
+    
+    .skills img {
+        width: 35px;
+        height: auto;
+    }
+
+    .skills__text {
+        font-size: 17px;
+    }
+    
+    .main__code h2 {
+        font-size: 24px;
+    }
+
+    .main__education {
+        margin-left: 40px;
+    }
+    
+    .main__education h2 {
+        font-size: 24px;
+    }
+    
+    .education__list {
+        font-size: 17px;
+    }
+
+    .main__project h2 {
+        font-size: 24px;
+        margin-left: 40px;
+    }
+    
+    .project__text {
+        width: 80%;
+        font-size: 17px;
+    }
+    
+    .main__language h2 {
+        font-size: 24px;
+    }
+    
+    .languages__list {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 560px) {
+ 
+     .main__image img {
+         width: 170px;
+         height: 170px;
+     }
+     
+     .main__name h2 {
+         font-size: 25px;
+         margin-bottom: 10px;
+     }
+     
+     .main__name h4 {
+         font-size: 20px;
+         font-weight: 600;
+     }
+ 
+     .summary h2 {
+         font-size: 24px;
+     }
+
+     .strengths {
+        width: 250px;
+    }
+    
+    .strengths__item {
+        font-size: 16px;
+    }
+ 
+     .main__text {
+         width: 200px;
+         font-size: 16px;
+     }
+ 
+     .contact {
+        font-size: 16px;
+     }
+
+ 
+     .contact__item {
+        margin-bottom: 20px;
+     }
+ 
+     .main__skills h2 {
+         font-size: 24px;
+     }
+     
+     .skills img {
+         width: 30px;
+         height: auto;
+     }
+ 
+     .skills__text {
+         font-size: 16px;
+     }
+     
+     .main__code h2 {
+         font-size: 24px;
+     }
+ 
+     .main__education {
+         margin-left: 40px;
+     }
+     
+     .main__education h2 {
+         font-size: 24px;
+     }
+     
+     .education__list {
+         font-size: 16px;
+     }
+
+     .main__project h2 {
+        font-size: 24px;
+        margin-left: 40px;
+    }
+    
+    .project__text {
+        width: 80%;
+        font-size: 16px;
+    }
+     
+     .main__language h2 {
+         font-size: 24px;
+     }
+     
+     .languages__list {
+         font-size: 16px;
+     }
+}
+
+@media (max-width: 460px) {
+    .main__image img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .main__name h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .main__name h4 {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .strengths {
+        width: 200px;
+    }
+    
+    .strengths__item {
+        font-size: 16px;
+    }
+
+    
+
+    .menu__link {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .header__list {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .header__item {
+        margin-bottom: 20px;
+    }
+
+    .main__image {
+        margin-left: 50px;
+    }
+
+    .summary h2 {
+        margin-left: 15px;
+        font-size: 20px;
+    }
+
+    .main__summary {
+        flex-wrap: wrap;
+    }
+
+    .strengths {
+        width: 200px;
+        margin-left: 15px;
+    }
+    
+    .strengths__item {
+        font-size: 15px;
+    }
+
+    .main__text {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
+    .contact {
+       font-size: 16px;
+       width:100%;
+       margin-left: 20px;
+    }
+
+    .contact__list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .contact__item {
+       margin-bottom: 10px;
+    }
+
+    .main__skills h2 {
+        font-size: 24px;
+    }
+    
+    .skills img {
+        width: 30px;
+        height: auto;
+    }
+
+    .skills__text {
+        font-size: 16px;
+    }
+    
+    .main__code h2 {
+        font-size: 24px;
+    }
+
+    .main__education {
+        margin-left: 40px;
+    }
+    
+    .main__education h2 {
+        font-size: 24px;
+    }
+    
+    .education__list {
+        font-size: 16px;
+    }
+
+    .main__project h2 {
+        font-size: 24px;
+        margin-left: 40px;
+        margin-top: 15px;
+    }
+    
+    .project__text {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .project__img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .main__language h2 {
+        font-size: 24px;
+    }
+    
+    .languages__list {
+        font-size: 16px;
+    }
+
+    .menu__link {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 390px) {
+    .main__image img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .main__name h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .main__name h4 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .main__text {
+        width: 85%;
+    }
+
+    .summary h2 {
+        margin-left: 24px;
+        font-size: 20px;
+    }
+
+    .main__skills h2 {
+        font-size: 20px;
+    }
+    
+    .skills img {
+        width: 25px;
+        height: auto;
+    }
+
+    .skills__text {
+        font-size: 14px;
+    }
+
+    .main__code h2 {
+        font-size: 20px;
+        margin-left: 28px;
+    }
+
+    .main__education {
+        margin-left: 28px;
+    }
+    
+    .main__education h2 {
+        font-size: 20px;
+    }
+    
+    .education__list {
+        font-size: 15px;
+    }
+
+    .main__project {
+        margin-top: 15px;
+        background-color: #C0CEE2;
+    }
+
+    .main__project h2 {
+        font-size: 20px;
+    }
+    
+    .project__img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .text__container h3 {
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    
+    .project__text {
+        width: 80%;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    
+    .main__language h2 {
+        font-size: 20px;
+    }
+    
+    .languages__list {
+        font-size: 15px;
+    }
+
+    .main__language {
+        margin-left: 28px;
+    }
+}
+
+@media(max-width: 350px) {
+    .main__image {
+        margin: 10px;
+    }
+}
+
+@media(max-width: 320px) {
+    .header__item {
+        margin-bottom: 30px;
+    }
+    .skills img {
+        width: 22px;
+        height: auto;
+    }
+
+    .skills__text {
+        font-size: 12px;
+    }
+
+    .contact {
+        margin-left: 25px;
+     }
+
+    .contact__list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; 
+    }
+
+    .contact__item {
+       margin-bottom: 10px;
+    }
+
+    .main__project {
+        margin-top: 15px;
+        background-color: #C0CEE2;
+    }
+
+    .main__project h2 {
+        font-size: 20px;
+    }
+    
+    .project__img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .text__container h3 {
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    
+    .project__text {
+        width: 80%;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+}
+
+  /*------------------------------------Media end-------------------*/
